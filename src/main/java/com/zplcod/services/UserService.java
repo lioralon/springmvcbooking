@@ -37,13 +37,6 @@ public class UserService {
         loginlogDao.insertLoginLog(loginlog);
 
     }
-    public LoginlogDao getLoginlogDao() {
-        return loginlogDao;
-    }
-
-    public UserDao getUserDao() {
-        return userDao;
-    }
 
 
 }

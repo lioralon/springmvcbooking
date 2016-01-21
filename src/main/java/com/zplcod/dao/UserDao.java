@@ -37,7 +37,7 @@ public class UserDao {
                 user.setLastIp(resultSet.getString("last_ip"));
                 String date = resultSet.getString("last_visit");
 
-                if (!date.isEmpty()) {
+                if ( date!=null && !date.isEmpty()) {
                     try {
                         user.setLastVisit(new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").parse(date));
                     } catch (ParseException e) {
